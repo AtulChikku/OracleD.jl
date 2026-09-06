@@ -1,0 +1,72 @@
+{
+    "simulation_parameters": {
+        "start_time": "2024-01-16 16:00:00",
+        "max_end_time": "2024-02-13 16:00:00",
+        "simulation_length_seconds": 2419200,
+        "timestep_seconds": 600,
+        "savings_policy": "none",
+        "carbon_intensity": {
+            "file": "data/carbon_intensity/de_carbon_Intensity_2024_15min.csv",
+            "segments": {
+                "start": "2024-01-16T16:00:00",
+                "end": "2024-02-13T16:30:00"
+            },
+            "high_CI_threshold": 400
+        },
+        "cluster": {
+            "worker_nodes": 310,
+            "worker_cores": 22797,
+            "worker_node_inventory": {
+                "DESYT3_0": 40,
+                "DESYT4_0": 76,
+                "DESYT11_0": 41,
+                "DESYT13_0": 24,
+                "DESYT16_0": 20,
+                "DESYT17_0": 10,
+                "DESYT26_0": 12,
+                "DESYT31_0": 10,
+                "DESYT382_0": 77
+            }
+        },
+        "jobs": {
+            "initial": {
+                "GridPP": 100000
+            },
+            "regular_incoming": []
+        }
+    },
+    "duration": {
+        "simulated_seconds": 109800.0,
+        "simulated_hours": 30.5,
+        "real_seconds": 2.36,
+        "real_minutes": 0.03933333333333333
+    },
+    "jobs": {
+        "started": 100000,
+        "finished": 100000,
+        "average_completed": 100000.0,
+        "total_cores_used": 100000
+    },
+    "cpu": {
+        "total_core_seconds": 1.73195632e9,
+        "total_core_hours": 481098.97777777776,
+        "average_core_hours": 4.8109897777777775
+    },
+    "occupancy": {
+        "average_fraction": 0.8207157925822356,
+        "average_percent": 82.07157925822357
+    },
+    "energy": {
+        "total_kwh": 3126.0191428571425,
+        "peaktime_kwh": 672.6752376190472,
+        "average_per_job_wh": 31.260191428571428
+    },
+    "carbon": {
+        "total_g": 1.6442410351491137e6,
+        "total_kg": 1644.2410351491137,
+        "peaktime_g": 382999.69494432345,
+        "peaktime_kg": 382.99969494432344,
+        "average_per_job_g": 16.442410351491137,
+        "peaktime_percent": 23.29340326368815
+    }
+}

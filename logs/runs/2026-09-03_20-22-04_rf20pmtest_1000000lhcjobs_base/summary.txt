@@ -1,0 +1,23 @@
+========
+Summary
+========
+
+Total Simulated-time Duration      : 168.0 hours
+Total Real-time Duration           :  0.1 minutes
+
+Jobs Started                       : 268000
+Jobs Finished                      : 261000
+
+Total CPU duration                 : 1278099.8 hours
+Average CPU duration               : 4.77 hours
+Average Occupancy of all clusters  : 46.3 %
+
+Total energy consumed by compute   : 13124.29 kWh
+Peaktime (5-9pm) energy consumption: 2209.63 kWh
+Average energy consumption per job : 49.62 Wh
+
+Estimated CO2e emissions           : 5031.643 kg
+Estimated Peaktime CO2e emissions  : 943.289 kg
+Average CO2e emissions per job     : 19.023 g
+Peaktime CO2e emissions percentage : 18.747 %
+

@@ -1,0 +1,14 @@
+========================================================================
+  OracleD Benchmark Report — Variant: graeme
+  Date: 2026-09-01T13:47:09.469
+========================================================================
+
+1. Simulation constructor
+   Trial(21.457 ms)
+
+2. Cluster update (single timestep)
+   Trial(2.387 ms)
+
+3. WorkerNode update
+   Trial(11.342 ns)
+

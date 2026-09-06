@@ -1,0 +1,33 @@
+========================================================================
+  OracleD Benchmark Report — Variant: graeme
+  Date: 2026-08-12T09:33:51.240
+========================================================================
+
+1. Simulation constructor
+   Trial(14.050 ms)
+
+2. Cluster update (single timestep)
+   Trial(441.486 μs)
+
+3. WorkerNode update
+   Trial(11.238 ns)
+
+4. Job creation (GridPP)
+   Trial(124.522 ns)
+
+5. Job creation (LHCb)
+   Trial(254.607 ns)
+
+6. Full short simulation
+   Trial(32.392 ms)
+
+────────────────────────────────────────────────────────────────────────
+  Summary (min / mean / max)
+────────────────────────────────────────────────────────────────────────
+  Simulation constructor        14049.631 μs / 33114.536 μs / 268022.260 μs   alloc: 20.0 MB  (276874)
+  Cluster update (1 timestep)     441.486 μs /   715.835 μs /  1371.620 μs   alloc: 172.2 KB  (237)
+  WorkerNode update                 0.011 μs /     0.017 μs /     0.096 μs   alloc: 32 B  (1)
+  create_job (GridPP)               0.125 μs /     0.520 μs /    63.004 μs   alloc: 320 B  (8)
+  create_job (LHCb)                 0.255 μs /     0.569 μs /   107.827 μs   alloc: 572 B  (11)
+  Full short simulation         32391.996 μs / 36919.240 μs / 41916.675 μs   alloc: 35.4 MB  (331857)
+

@@ -1,0 +1,79 @@
+{
+    "simulation_parameters": {
+        "start_time": "2024-01-16 16:00:00",
+        "max_end_time": "2024-01-20 04:00:00",
+        "simulation_length_seconds": 302400,
+        "timestep_seconds": 600,
+        "savings_policy": "none",
+        "carbon_intensity": {
+            "file": "data/carbon_intensity/de_carbon_Intensity_2024_15min.csv",
+            "segments": {
+                "start": "2024-01-16T16:00:00",
+                "end": "2024-01-20T04:30:00"
+            },
+            "high_CI_threshold": 400
+        },
+        "cluster": {
+            "worker_nodes": 310,
+            "worker_cores": 22797,
+            "worker_node_inventory": {
+                "DESYT3_0": 40,
+                "DESYT4_0": 76,
+                "DESYT11_0": 41,
+                "DESYT13_0": 24,
+                "DESYT16_0": 20,
+                "DESYT17_0": 10,
+                "DESYT26_0": 12,
+                "DESYT31_0": 10,
+                "DESYT382_0": 77
+            }
+        },
+        "jobs": {
+            "initial": {
+                "GridPP": 100000
+            },
+            "regular_incoming": [
+                {
+                    "job_mix": {
+                        "GridPP": 1000
+                    },
+                    "incoming_timestep_seconds": 3600
+                }
+            ]
+        }
+    },
+    "duration": {
+        "simulated_seconds": 302400.0,
+        "simulated_hours": 84.0,
+        "real_seconds": 2.924,
+        "real_minutes": 0.04873333333333333
+    },
+    "jobs": {
+        "started": 184000,
+        "finished": 177000,
+        "average_completed": 180500.0,
+        "total_cores_used": 184000
+    },
+    "cpu": {
+        "total_core_seconds": 3.080338272e9,
+        "total_core_hours": 855649.52,
+        "average_core_hours": 4.650269130434783
+    },
+    "occupancy": {
+        "average_fraction": 0.5856987587478442,
+        "average_percent": 58.569875874784415
+    },
+    "energy": {
+        "total_kwh": 7266.471450476171,
+        "peaktime_kwh": 1385.6804195238078,
+        "average_per_job_wh": 40.257459559424774
+    },
+    "carbon": {
+        "total_g": 3.718328419513256e6,
+        "total_kg": 3718.328419513256,
+        "peaktime_g": 742588.0423208856,
+        "peaktime_kg": 742.5880423208856,
+        "average_per_job_g": 20.600157448826902,
+        "peaktime_percent": 19.971018117277907
+    }
+}

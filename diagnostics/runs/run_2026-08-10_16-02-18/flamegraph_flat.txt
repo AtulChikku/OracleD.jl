@@ -1,0 +1,157 @@
+ Count  Overhead File                    Line Function
+ =====  ======== ====                    ==== ========
+     1         0 @OracleD/src/Simulation.jl  353 start!(simulation::Main.OracleD.S…
+     1         0 @OracleD/src/DataLogger.jl  204 print_summary(datalogger::Main.Or…
+     1         0 @Base/io.jl             414 open(::Main.OracleD.var"#print_su…
+     1         0 @Base/iostream.jl        43 close(s::IOStream)
+     1         0 @juliasrc/support/ios.c  689 ios_close
+     1         0 /lib64/libc.so.6          ? __close
+     1         0 @OracleD/src/Cluster.jl  189 update!(cluster::Main.OracleD.Clu…
+     1         0 @OracleD/src/WorkerNode.jl  357 update!(worker_node::Main.OracleD…
+     1         0 @OracleD/src/WorkerNode.jl  193 can_schedule_job
+     1         1 @Base/Base_compiler.jl   54 getproperty
+     1         0 @OracleD/src/Cluster.jl  205 update!(cluster::Main.OracleD.Clu…
+     1         1 @Base/int.jl            519 <
+     1         0 @OracleD/src/Cluster.jl  211 update!(cluster::Main.OracleD.Clu…
+     1         1 @Base/essentials.jl     920 getindex
+     1         0 @OracleD/src/Simulation.jl  327 start!(simulation::Main.OracleD.S…
+     1         0 @OracleD/src/JobScheduler.jl  106 update!(scheduler::Main.OracleD.J…
+     1         0 @Base/strings/io.jl     147 print_to_string(::String, ::Int64)
+     1         0 @juliasrc/datatype.c   1811 ijl_get_nth_field
+     1         0 @juliasrc/julia.h      1523 jl_datatype_layout
+     1         1 @juliasrc/julia.h      1515 jl_is_layout_opaque
+     1         0 @Base/array.jl         1152 (::Base.var"#_growend!##0#_growen…
+     1         0 @Base/genericmemory.jl  129 unsafe_copyto!
+     1         0 @juliasrc/genericmemory.c  267 jl_genericmemory_copyto
+     1         1 @juliasrc/julia_internal.h  353 memmove_refs
+     1         1 @Base/essentials.jl       ? update!(cluster::Main.OracleD.Clu…
+     1         1 /lib64/libc.so.6          ? unlink_chunk.isra.0
+     1         0 @OracleD/src/Simulation.jl  136 Main.OracleD.Simulation(config::O…
+     1         0 @OracleD/src/Simulation.jl  195 _write_simulation_parameters
+     1         0 @Base/io.jl             410 open(::Main.OracleD.var"#_write_s…
+     1         0 @julialib/julia/sys.so    ? jfptr_open_63059.1
+     1         0 @Base/iostream.jl       379 open(fname::String, mode::String)
+     1         0 @Base/iostream.jl       380 open(fname::String, mode::String;…
+     1         0 @Base/iostream.jl       296 open
+     1         0 @Base/iostream.jl       314 open(fname::String; lock::Bool, r…
+     1         0 @juliasrc/support/ios.c  972 ios_file
+     1         0 @juliasrc/support/ios.c  929 open_cloexec
+     1         0 /lib64/libc.so.6          ? __open64
+     1         0 @Base/strings/io.jl     152 print_to_string(::String, ::Int64)
+     1         1 @juliasrc/datatype.c   1814 ijl_get_nth_field
+     1         0 @OracleD/src/Cluster.jl  126 submit_job!
+     1         1 @Base/array.jl         1128 _growend!
+     1         1 @juliasrc/genericmemory.c   53 jl_alloc_genericmemory_unchecked
+     1         0 @Base/strings/util.jl   733 iterate
+     1         1 @Base/int.jl            520 <=
+     1         1 @Base/strings/search.jl    ? findnext(pred::Base.Fix2{typeof(i…
+     1         0 @Base/strings/search.jl   53 findnext(pred::Base.Fix2{typeof(i…
+     1         0 @Base/strings/string.jl  554 isvalid
+     1         0 @Base/strings/string.jl  170 thisind
+     1         1 @Base/strings/string.jl  179 _thisind_str
+     1         0 @OracleD/src/Simulation.jl  178 _load_carbon_intensity_data(path:…
+     1         0 @Base/io.jl            1238 iterate(itr::Base.EachLine{IOStre…
+     1         0 @Base/iostream.jl       474 readline
+     1         0 @Base/iostream.jl        43 readline(s::IOStream; keep::Bool)
+     1         0 @juliasrc/sys.c         277 ijl_readuntil
+     1         0 @juliasrc/array.c       309 ijl_pchar_to_string
+     1         1 @juliasrc/array.c       303 ijl_alloc_string
+     2         0 /lib64/libc.so.6          ? __syscall_cancel
+     2         2 /lib64/libc.so.6          ? __syscall_cancel_arch_end
+     2         0 @OracleD/src/VOJobFactory.jl  194 create_job!
+     2         0 @Base/strings/io.jl     193 string
+     2         0 @Base/tuple.jl           74 iterate
+     2         0 @Base/tuple.jl           33 getindex
+     2         0 @juliasrc/datatype.c   1858 ijl_get_nth_field_checked
+     2         0 @OracleD/src/Cluster.jl  209 update!(cluster::Main.OracleD.Clu…
+     2         0 @juliasrc/genericmemory.c   38 jl_alloc_genericmemory_unchecked
+     2         0 @juliasrc/gc-stock.c   3834 ijl_gc_managed_malloc
+     2         0 @juliasrc/gc-common.h   112 jl_malloc_aligned
+     2         0 /lib64/libc.so.6          ? posix_memalign
+     2         0 /lib64/libc.so.6          ? _mid_memalign
+     2         0 /lib64/libc.so.6          ? _int_memalign
+     2         1 /lib64/libc.so.6          ? _int_malloc
+     2         0 @OracleD/src/Simulation.jl  107 Main.OracleD.Simulation(config::O…
+     2         0 @OracleD/src/JobScheduler.jl   62 Main.OracleD.JobScheduler(simulat…
+     2         2 /lib64/libc.so.6          ? __memset_avx512_unaligned_erms
+     2         0 @Base/array.jl          739 _collect(cont::UnitRange{Int64}, …
+     2         1 @Base/strings/util.jl   731 iterate
+     2         0 @Base/array.jl         1293 _push!
+     2         2 @Base/array.jl         1010 __safe_setindex!
+     2         0 @Base/strings/util.jl   732 iterate
+     2         0 @OracleD/src/Simulation.jl  157 _load_carbon_intensity_data(path:…
+     2         0 @Base/io.jl             705 readlines
+     2         0 @Base/io.jl             706 #readlines#360
+     2         0 @Base/io.jl             412 open(f::Base.var"#362#363"{Base.P…
+     2         0 @Base/io.jl             707 #362
+     2         0 @Base/io.jl             710 readlines
+     2         0 @Base/io.jl             710 #readlines#364
+     3         1 @Base/array.jl          901 iterate
+     3         0 @Base/array.jl          741 _collect(cont::UnitRange{Int64}, …
+     4         0 @Base/io.jl             409 open
+     4         0 @OracleD/src/WorkerNode.jl  175 get_free_core_count
+     4         4 @Base/int.jl             86 -
+     5         0 @Base/array.jl         1148 (::Base.var"#_growend!##0#_growen…
+     5         0 @Base/array.jl         1067 array_new_memory
+     5         0 @Base/boot.jl           588 GenericMemory
+     5         0 @Base/array.jl          740 _collect(cont::UnitRange{Int64}, …
+     6         0 @Base/array.jl         1131 _growend!
+     7         0 @Base/array.jl         1292 _push!
+     8         0 @OracleD/src/Simulation.jl  158 _load_carbon_intensity_data(path:…
+     8         0 @Base/strings/util.jl   897 split
+     8         0 @Base/strings/util.jl   899 #split#428
+     9         0 @Base/array.jl         1289 push!
+    10         0 @Base/array.jl          728 collect
+    11         0 @Base/operators.jl      425 >
+    11        11 @Base/int.jl             83 <
+    11         0 @OracleD/src/Simulation.jl   72 Main.OracleD.Simulation(config::O…
+    14         0 @OracleD/diagnostics.jl  334 profiled_run
+    14         0 @OracleD/diagnostics.jl  164 build_mini_simulation
+    15         0 @OracleD/src/WorkerNode.jl  192 can_schedule_job
+    16         0 @OracleD/src/Cluster.jl  200 update!(cluster::Main.OracleD.Clu…
+    22         0 @OracleD/src/Simulation.jl  330 start!(simulation::Main.OracleD.S…
+    24         0 @OracleD/diagnostics.jl  335 profiled_run
+    24         0 @OracleD/diagnostics.jl  177 run_mini_simulation
+    38         0 @juliasrc/task.c       1252 start_task
+    38         0 @julialib/julia/sys.so    ? jfptr_YY.start_profile_listenerYY…
+    38         0 @Base/Base.jl           352 (::Base.var"#start_profile_listen…
+    38         0 @Base/Base.jl           332 profile_printing_listener(cond::B…
+    38         0 @Base/asyncevent.jl     185 _trywait(t::Base.AsyncCondition)
+    38         0 @Base/condition.jl      136 wait
+    38         0 @Base/condition.jl      141 wait(c::Base.GenericCondition{Bas…
+    38         0 @Base/task.jl          1228 wait()
+    38         0 @Base/task.jl          1216 poptask(W::Base.IntrusiveLinkedLi…
+    38         0 @juliasrc/scheduler.c   523 ijl_task_get_next
+    38         0 …buv/src/unix/thread.c  822 uv_cond_wait
+    38         0 /lib64/libc.so.6          ? pthread_cond_wait
+    38         0 /lib64/libc.so.6          ? __GI___futex_abstimed_wait_cancel…
+    38        37 /lib64/libc.so.6          ? __syscall_cancel_arch_start
+    38         0 …ysdeps/x86_64/start.S  123 [unknown function]
+    38         0 /lib64/libc.so.6          ? __libc_start_main
+    38         0 /lib64/libc.so.6          ? __libc_start_call_main
+    38         0 …t-12/cli/loader_exe.c   58 main
+    38         0 @juliasrc/jlapi.c      1139 jl_repl_entrypoint
+    38         0 @juliasrc/jlapi.c       971 true_main
+    38         0 @julialib/julia/sys.so    ? jfptr__start_63319.1
+    38         0 @Base/client.jl         550 _start()
+    38         0 @Base/client.jl         317 exec_options(opts::Base.JLOptions)
+    38         0 @Base/Base.jl           306 include(mod::Module, _path::Strin…
+    38         0 @Base/loading.jl       2934 _include(mapexpr::Function, mod::…
+    38         0 @Base/loading.jl       2874 include_string(mapexpr::typeof(id…
+    38         0 @Base/boot.jl           489 eval(m::Module, e::Any)
+    38         0 @juliasrc/toplevel.c   1092 ijl_toplevel_eval_in
+    38         0 @juliasrc/toplevel.c   1047 ijl_toplevel_eval
+    38         0 @juliasrc/toplevel.c    975 jl_toplevel_eval_flex
+    38         0 @juliasrc/toplevel.c   1035 jl_toplevel_eval_flex
+    38         0 @juliasrc/interpreter.c  898 jl_interpret_toplevel_thunk
+    38         0 @juliasrc/interpreter.c  707 eval_body
+    38         0 @juliasrc/interpreter.c  194 eval_stmt_value
+    38         0 @juliasrc/interpreter.c  243 eval_value
+    38         0 @juliasrc/interpreter.c  123 do_call
+    38         0 [any unknown stackframes]
+    38         0 @OracleD/diagnostics.jl  546 main()
+    38         0 @OracleD/diagnostics.jl  344 phase2_profiling()
+    38         0 @Profile/src/Profile.jl   60 macro expansion
+    40         0 /lib64/libc.so.6          ? __internal_syscall_cancel
+    76         0 @juliasrc/julia.h      2391 jl_apply
+Total snapshots: 76. Utilization: 50% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.

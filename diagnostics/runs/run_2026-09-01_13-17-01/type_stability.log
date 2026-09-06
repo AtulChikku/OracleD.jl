@@ -1,0 +1,23 @@
+========================================================================
+  OracleD Type Stability Report — Variant: graeme
+  Date: 2026-09-01T13:17:09.971
+========================================================================
+
+  COLOUR LEGEND
+    [31mred    [0m  definite type instability: `::Any` / `Core.Box` (dynamic dispatch)
+    [33myellow [0m  possible type instability: `::Union{...}` (may be benign)
+    [32mgreen  [0m  no instability found
+  View with `less -R` or `cat` to see the colours.
+
+--- JET.@report_call (errors): Cluster.update! ---
+  [31m[ERROR][0m MethodErrorReport(no matching method found `Main.OracleD.Simulation(::OrderedDict{String, Any}, ::Vector{Pair{Main.OracleD.WorkerNodeSpec, Int64}})`: sim = (OracleD).Simulation::Type{Main.OracleD.Simulation}(c, inv))
+
+--- JET.@report_call (errors): WorkerNode.update! ---
+  [31m[ERROR][0m MethodErrorReport(no matching method found `Main.OracleD.Simulation(::OrderedDict{String, Any}, ::Vector{Pair{Main.OracleD.WorkerNodeSpec, Int64}})`: sim = (OracleD).Simulation::Type{Main.OracleD.Simulation}(c, inv))
+
+--- JET.@report_call (errors): JobScheduler.update! ---
+  [31m[ERROR][0m MethodErrorReport(no matching method found `Main.OracleD.Simulation(::OrderedDict{String, Any}, ::Vector{Pair{Main.OracleD.WorkerNodeSpec, Int64}})`: sim = (OracleD).Simulation::Type{Main.OracleD.Simulation}(c, inv))
+
+--- JET.@report_call (errors): Simulation constructor ---
+  [31m[ERROR][0m MethodErrorReport(no matching method found `Main.OracleD.Simulation(::OrderedDict{String, Any}, ::Vector{Pair{Main.OracleD.WorkerNodeSpec, Int64}})`: (OracleD).Simulation::Type{Main.OracleD.Simulation}(make_mini_config()::OrderedDict{String, Any}, make_mini_inventory()::Vector{Pair{Main.OracleD.WorkerNodeSpec, Int64}}))
+

@@ -1,0 +1,569 @@
+ Count  Overhead File                    Line Function
+ =====  ======== ====                    ==== ========
+     1         0 @OracleD/src/Simulation.jl  361 start!(simulation::Main.OracleD.S…
+     1         0 @OracleD/src/DataLogger.jl  204 print_summary(datalogger::Main.Or…
+     1         0 @OracleD/src/DataLogger.jl  199 print_summary(datalogger::Main.Or…
+     1         0 @Base/io.jl             414 open(::Main.OracleD.var"#print_su…
+     1         0 @Base/iostream.jl        43 close(s::IOStream)
+     1         0 @juliasrc/support/ios.c  687 ios_close
+     1         0 @juliasrc/support/ios.c  640 ios_flush
+     1         0 @juliasrc/support/ios.c  654 ios_flush
+     1         0 @juliasrc/support/ios.c  171 _os_write_all
+     1         0 @juliasrc/support/ios.c  150 _os_write
+     1         1 @Base/intfuncs.jl       709 ndigits0zpb(x::Int64, b::Int64)
+     1         0 @Base/int.jl           1015 -
+     1         0 @juliasrc/gc-stock.c   1838 gc_mark_objarray
+     1         1 @juliasrc/gc-heap-snapshot.h   77 gc_heap_snapshot_record_array_edge
+     1         1 @OracleD/src/DataLogger.jl   82 job_start!(datalogger::Main.Oracl…
+     1         1 @juliasrc/gc-common.c   540 jl_gc_alloc
+     1         0 @Base/iobuffer.jl       611 ensureroom
+     1         1 @Base/iobuffer.jl       535 _resize!(io::IOBuffer, new_size::…
+     1         0 @Base/array.jl         1136 (::Base.var"#_growend!##0#_growen…
+     1         1 @Base/int.jl             88 *
+     1         0 @juliasrc/datatype.c   1844 ijl_get_nth_field
+     1         1 @juliasrc/julia_internal.h  644 undefref_check
+     1         1 /lib64/libc.so.6          ? __memset_avx512_unaligned
+     1         1 @juliasrc/gc-stock.c   1416 gc_sweep_pool
+     1         1 @juliasrc/gc-stock.c   1374 gc_sweep_pool
+     1         0 @juliasrc/gc-stock.c   2321 gc_mark_outrefs
+     1         1 @juliasrc/gc-stock.c   2069 gc_mark_stack
+     1         0 @OracleD/src/Cluster.jl  196 update!(cluster::Main.OracleD.Clu…
+     1         1 @juliasrc/array.c       292 ijl_alloc_string
+     1         0 @juliasrc/gc-stock.c   1311 gc_free_pages
+     1         1 @juliasrc/gc-stock.h    192 pop_lf_back
+     1         0 @juliasrc/gc-stock.c    882 gc_sweep_page
+     1         1 @juliasrc/gc-page-profiler.h   41 gc_page_profile_write_empty_page
+     1         0 @OracleD/src/WorkerNode.jl  228 start_job!(worker_node::Main.Orac…
+     1         0 @OracleD/src/WorkerNode.jl  357 update!(worker_node::Main.OracleD…
+     1         1 @juliasrc/gc-stock.c   2493 gc_mark_outrefs
+     1         1 @juliasrc/gc-stock.c    730 jl_gc_small_alloc_inner
+     1         1 @juliasrc/gc-stock.c   3840 ijl_gc_managed_malloc
+     1         1 @juliasrc/gc-stock.c   2238 gc_mark_outrefs
+     1         1 @juliasrc/gc-page-profiler.c   36 gc_page_serializer_init
+     1         1 @juliasrc/gc-stock.c    661 sweep_malloced_memory
+     1         1 @juliasrc/gc-stock.c    970 gc_sweep_page
+     1         1 @Base/intfuncs.jl       884 append_c_digits(olength::Int64, d…
+     1         1 @Base/strings/io.jl      32 print(io::IOBuffer, x::Int64)
+     1         1 @Dates/src/accessors.jl   10 year(days::Int64)
+     1         0 @juliasrc/gc-stock.c    961 gc_sweep_page
+     1         1 @juliasrc/gc-page-profiler.c  111 gc_page_profile_write_to_file
+     1         0 @juliasrc/gc-stock.c   1318 gc_free_pages
+     1         1 @juliasrc/gc-stock.c   1192 gc_sweep_prescan
+     1         1 @juliasrc/gc-stock.c    240 gc_try_setmark_tag
+     1         0 @juliasrc/gc-stock.c   3433 ijl_gc_collect
+     1         0 @juliasrc/safepoint.c   214 jl_safepoint_start_gc
+     1         0 @juliasrc/safepoint.c    50 jl_safepoint_enable
+     1         0 @juliasrc/safepoint.c    67 jl_safepoint_enable
+     1         1 @juliasrc/gc-stock.c    932 gc_sweep_page
+     1         1 @juliasrc/datatype.c   1819 ijl_get_nth_field
+     1         1 @Base/array.jl            ? (::Base.var"#_growend!##0#_growen…
+     1         0 @Base/array.jl         1123 _growend!
+     1         0 @juliasrc/gc-stock.c   3063 _jl_gc_collect
+     1         0 @juliasrc/gc-stock.c   2822 gc_queue_remset
+     1         0 @juliasrc/gc-stock.c   1606 gc_ptr_queue_push
+     1         1 @juliasrc/work-stealing-queue.h   54 ws_queue_push
+     1         0 @Base/strings/substring.jl  254 _string(::String, ::Vararg{String…
+     1         1 @Base/iobuffer.jl       626 ensureroom_slowpath(io::IOBuffer,…
+     1         0 @OracleD/src/WorkerNode.jl  342 update!(worker_node::Main.OracleD…
+     1         0 @Base/array.jl          405 getindex
+     1         1 @juliasrc/rtutils.c     266 ijl_enter_handler
+     1         0 @OracleD/src/Cluster.jl  235 update!(cluster::Main.OracleD.Clu…
+     1         0 @Base/strings/search.jl  782 occursin
+     1         0 @Base/strings/search.jl  294 _searchindex(s::String, t::String…
+     1         0 @Base/strings/search.jl  304 _searchindex(s::Base.CodeUnits{UI…
+     1         1 /lib64/libc.so.6          ? __errno_location
+     1         0 @juliasrc/gc-stock.c   3838 ijl_gc_managed_malloc
+     1         1 @julialib/…ulia-internal.so.1.12    ? [unknown function]
+     1         0 @juliasrc/gc-stock.c   3487 ijl_gc_collect
+     1         0 @juliasrc/safepoint.c   228 jl_safepoint_end_gc
+     1         0 @juliasrc/safepoint.c    72 jl_safepoint_disable
+     1         0 @juliasrc/safepoint.c    87 jl_safepoint_disable
+     1         0 /lib64/libc.so.6          ? systrim.constprop.0
+     1         1 @juliasrc/gc-stock.c   1807 gc_mark_objarray
+     1         1 @juliasrc/gc-stock.c    302 gc_setmark_pool_
+     1         1 @juliasrc/gc-stock.c   2516 gc_mark_loop_serial_
+     1         1 @juliasrc/gc-stock.c    248 gc_try_setmark_tag
+     1         0 @OracleD/src/DataLogger.jl   98 job_finish!(datalogger::Main.Orac…
+     1         1 @juliasrc/builtins.c    276 ijl_egal__bitstag
+     1         1 @juliasrc/genericmemory.c  237 jl_genericmemory_copyto
+     1         0 @OracleD/src/WorkerNode.jl  350 update!(worker_node::Main.OracleD…
+     1         0 @OracleD/src/Jobs.jl     59 set_duration!
+     1         0 @Dates/src/types.jl     474 ==
+     1         0 @OracleD/src/Time.jl    130 get_current_datetime
+     1         1 @Base/array.jl         1153 (::Base.var"#_growend!##0#_growen…
+     1         0 @juliasrc/gc-stock.c    704 gc_add_page
+     1         0 @juliasrc/gc-pages.c    113 jl_gc_alloc_page
+     1         1 @juliasrc/gc-stock.h    302 gc_alloc_map_set
+     1         0 @juliasrc/builtins.c    278 ijl_egal__bitstag
+     1         1 @juliasrc/gc-stock.c   1264 gc_sweep_pool_parallel
+     1         1 @juliasrc/gc-stock.c    925 gc_sweep_page
+     1         1 @juliasrc/gc-stock.c    912 gc_sweep_page
+     1         1 @juliasrc/gc-stock.c    915 gc_sweep_page
+     1         0 @juliasrc/gc-stock.c   1371 gc_sweep_pool
+     1         1 @juliasrc/gc-stock.c   1139 gc_pool_sync_nfree
+     1         1 @juliasrc/gc-stock.c   2368 gc_mark_outrefs
+     1         1 @juliasrc/gc-stock.c   1700 gc_mark_obj8
+     1         0 @juliasrc/gc-stock.c   1712 gc_mark_obj8
+     1         1 @juliasrc/gc-stock.c    250 gc_try_setmark_tag
+     1         0 @juliasrc/gc-stock.c   2460 gc_mark_outrefs
+     1         1 @juliasrc/julia.h      1565 jl_dt_layout_ptrs
+     1         1 @juliasrc/gc-stock.c   3823 ijl_gc_managed_malloc
+     1         0 @OracleD/src/Simulation.jl  136 Main.OracleD.Simulation(config::O…
+     1         0 @OracleD/src/Simulation.jl  195 _write_simulation_parameters
+     1         0 @OracleD/src/Simulation.jl  115 Main.OracleD.Simulation(config::O…
+     1         1 @juliasrc/rtutils.c     338 ijl_eh_restore_state_noexcept
+     1         1 @juliasrc/genericmemory.c  113 jl_string_to_genericmemory
+     1         0 @juliasrc/datatype.c   1810 ijl_get_nth_field
+     1         1 @juliasrc/julia.h       983 jl_to_typeof
+     1         1 @Base/iobuffer.jl       609 ensureroom
+     1         1 @juliasrc/rtutils.c     368 ijl_excstack_state
+     1         1 @juliasrc/genericmemory.c  204 jl_genericmemory_to_string
+     1         0 @juliasrc/gc-stock.c    806 jl_gc_alloc_
+     1         1 @juliasrc/julia.h       133 jl_set_typeof
+     1         1 @Base/intfuncs.jl       766 ndigits0z(x::Int64, b::Int64)
+     1         1 @juliasrc/genericmemory.c  190 jl_genericmemory_to_string
+     1         0 @OracleD/src/VOJobFactory.jl  154 require_cores!
+     1         1 @juliasrc/julia.h      1594 jl_field_isptr
+     1         1 @juliasrc/genericmemory.c  115 jl_string_to_genericmemory
+     1         1 @Base/iobuffer.jl       836 unsafe_write(to::IOBuffer, p::Ptr…
+     1         1 @Base/strings/string.jl   68 String
+     1         0 @Base/iobuffer.jl       831 unsafe_write(to::IOBuffer, p::Ptr…
+     1         0 @Base/iobuffer.jl       862 _unsafe_write
+     1         0 @Base/array.jl          268 unsafe_copyto!
+     1         0 @Base/cmem.jl            28 memmove
+     1         1 /lib64/libc.so.6          ? __memmove_avx512_unaligned_erms
+     1         0 @juliasrc/gc-stock.c    807 jl_gc_alloc_
+     1         1 @juliasrc/gc-alloc-profiler.h   42 maybe_record_alloc_to_profile
+     1         0 @Base/iobuffer.jl       163 get_offset
+     1         1 @juliasrc/datatype.c   1809 ijl_get_nth_field
+     1         0 @Base/iobuffer.jl       602 ensureroom
+     1         0 @Base/intfuncs.jl       873 append_c_digits(olength::Int64, d…
+     1         0 @Base/div.jl            196 divrem
+     1         0 @Base/div.jl            219 divrem
+     1         1 @Base/intfuncs.jl       870 append_c_digits(olength::Int64, d…
+     1         0 @Base/strings/string.jl   84 unsafe_takestring
+     1         1 @juliasrc/genericmemory.c  218 jl_genericmemory_to_string
+     1         1 @juliasrc/rtutils.c     271 ijl_enter_handler
+     1         0 @OracleD/src/Simulation.jl   93 Main.OracleD.Simulation(config::O…
+     1         0 @OracleD/src/Simulation.jl   90 Main.OracleD.Simulation(config::O…
+     1         0 @Base/strings/substring.jl   31 SubString{String}(s::String, i::I…
+     1         1 @Base/int.jl            520 <=
+     1         0 @Base/array.jl          738 _collect(cont::UnitRange{Int64}, …
+     1         0 @Base/array.jl          660 _similar_for
+     1         0 @Base/abstractarray.jl  824 similar
+     1         0 @Base/abstractarray.jl  832 similar
+     1         0 @Base/boot.jl           660 Array
+     1         1 @juliasrc/gc-stock.c    770 jl_gc_small_alloc_inner
+     1         0 @Base/int.jl           1015 +
+     1         0 @OracleD/src/Simulation.jl  160 _load_carbon_intensity_data(path:…
+     1         0 @Base/strings/substring.jl  119 ==
+     1         0 @Base/strings/string.jl  148 _memcmp
+     1         0 @Base/strings/string.jl  153 _memcmp
+     1         0 @Base/cmem.jl            56 memcmp
+     1         1 @Base/strings/substring.jl   30 SubString{String}(s::String, i::I…
+     1         0 @Base/essentials.jl     687 cconvert
+     1         0 @Base/boot.jl           962 UInt64
+     1         0 @Base/boot.jl           932 toUInt64
+     1         1 @Base/boot.jl           821 check_sign_bit
+     1         0 @juliasrc/gc-stock.c    708 gc_add_page
+     1         0 @Base/strings/substring.jl   34 SubString{String}(s::String, i::I…
+     1         0 @Base/strings/string.jl  554 isvalid
+     1         0 @Base/strings/string.jl  170 thisind
+     1         1 @Base/strings/string.jl  176 _thisind_str
+     1         0 @Base/strings/string.jl  202 _nextind_str
+     1         0 @Base/strings/string.jl   30 between
+     1         1 @Base/bool.jl            40 &
+     1         1 @Base/strings/util.jl   733 iterate
+     1         0 @OracleD/src/Simulation.jl  182 _load_carbon_intensity_data(path:…
+     1         1 @Base/strings/string.jl    ? _nextind_str
+     1         0 @Base/iostream.jl        42 eof(s::IOStream)
+     1         0 @Base/lock.jl           178 _trylock(rl::ReentrantLock, ct::T…
+     1         1 @Base/Base_compiler.jl   83 setproperty!
+     1         0 @Base/iostream.jl        42 readline(s::IOStream; keep::Bool)
+     1         1 @Base/gcutils.jl          ? _trylock(rl::ReentrantLock, ct::T…
+     1         1 @juliasrc/gc-stock.c    809 jl_gc_alloc_
+     1         1 @juliasrc/array.c       313 ijl_pchar_to_string
+     1         1 @Base/pointer.jl         63 cconvert
+     1         0 @juliasrc/sys.c         269 ijl_readuntil
+     1         1 /lib64/libc.so.6          ? __memchr_evex
+     1         0 @OracleD/diagnostics.jl  157 build_mini_simulation
+     1         0 @OracleD/diagnostics.jl  146 make_mini_inventory()
+     1         0 @OracleD/src/ClusterLoader.jl   86 load_cluster_inventory
+     1         0 @OracleD/src/ClusterLoader.jl   93 load_cluster_inventory(machinegro…
+     1         0 @OracleD/src/ClusterLoader.jl   37 load_frequency_map(frequency_csv:…
+     1         0 @Base/strings/util.jl   444 strip
+     1         0 @Base/strings/util.jl   415 rstrip
+     1         0 @Base/strings/util.jl   410 rstrip
+     2         0 @OracleD/src/Simulation.jl  353 start!(simulation::Main.OracleD.S…
+     2         0 @Base/io.jl             410 open(::Main.OracleD.var"#print_su…
+     2         0 @julialib/julia/sys.so    ? jfptr_open_63059.1
+     2         0 @Base/iostream.jl       379 open(fname::String, mode::String)
+     2         0 @Base/iostream.jl       380 open(fname::String, mode::String;…
+     2         0 @Base/iostream.jl       296 open
+     2         0 @Base/iostream.jl       314 open(fname::String; lock::Bool, r…
+     2         0 @juliasrc/support/ios.c  972 ios_file
+     2         0 @juliasrc/support/ios.c  929 open_cloexec
+     2         0 /lib64/libc.so.6          ? __open64
+     2         0 @Base/intfuncs.jl       770 ndigits0z(x::Int64, b::Int64)
+     2         2 @juliasrc/gc-stock.c   1418 gc_sweep_pool
+     2         0 @juliasrc/gc-stock.c   1453 gc_sweep_pool
+     2         0 @OracleD/src/WorkerNode.jl  341 update!(worker_node::Main.OracleD…
+     2         2 @juliasrc/gc-stock.c   1711 gc_mark_obj8
+     2         0 @Base/iobuffer.jl       229 GenericIOBuffer
+     2         0 @Base/iobuffer.jl       241 #IOBuffer#389
+     2         0 @Base/iobuffer.jl       152 GenericIOBuffer
+     2         0 @Base/array.jl         1129 _growend!
+     2         2 @Base/strings/substring.jl  240 _string(::String, ::Vararg{String…
+     2         1 @OracleD/src/Cluster.jl  230 update!(cluster::Main.OracleD.Clu…
+     2         0 @Base/iobuffer.jl       829 unsafe_write(to::IOBuffer, p::Ptr…
+     2         0 @Base/promotion.jl      648 max
+     2         2 @Base/essentials.jl     799 ifelse
+     2         0 @juliasrc/julia_threads.h  342 maybe_collect
+     2         2 @juliasrc/julia_threads.h  349 jl_gc_state_set
+     2         2 /lib64/libc.so.6          ? __mprotect
+     2         0 @OracleD/src/JobScheduler.jl   92 update!(scheduler::Main.OracleD.J…
+     2         0 @Base/intfuncs.jl       877 append_c_digits(olength::Int64, d…
+     2         0 @Base/genericmemory.jl  260 setindex!
+     2         2 @Base/genericmemory.jl  253 _setindex!
+     2         2 @Base/intfuncs.jl       990 string(n::Int64; base::Int64, pad…
+     2         0 @Base/strings/substring.jl  236 string
+     2         0 @OracleD/src/Cluster.jl  184 update!(cluster::Main.OracleD.Clu…
+     2         0 @Base/boot.jl           647 Array
+     2         2 @Base/intfuncs.jl       702 ndigits0zpb(x::UInt64, b::Int64)
+     2         2 @juliasrc/gc-stock.h    159 push_lf_back
+     2         2 /lib64/libc.so.6          ? __sigsetjmp
+     2         0 @Base/strings/io.jl     145 print_to_string(::String, ::Int64)
+     2         1 @Base/boot.jl           648 Array
+     2         2 @juliasrc/genericmemory.c  233 jl_genericmemory_copyto
+     2         2 @juliasrc/builtins.c    246 ijl_egal__bitstag
+     2         2 @juliasrc/gc-stock.c   2455 gc_mark_outrefs
+     2         2 @juliasrc/gc-stock.c    292 gc_setmark_pool_
+     2         2 @Base/promotion.jl      637 ==
+     2         0 @Base/intfuncs.jl       999 string(n::Int64; base::Int64, pad…
+     2         0 @Base/intfuncs.jl       970 split_sign
+     2         0 @Base/int.jl            188 abs
+     2         2 @Base/int.jl            142 flipsign
+     2         0 @juliasrc/gc-stock.c    765 jl_gc_small_alloc_inner
+     2         0 @juliasrc/gc-stock.c   1270 gc_sweep_pool_parallel
+     2         2 @juliasrc/gc-stock.h    177 try_pop_lf_back
+     2         0 @Base/coreio.jl           3 print(x::String)
+     2         0 @Base/strings/io.jl     248 print(io::Base.TTY, s::String)
+     2         2 @juliasrc/rtutils.c     359 ijl_pop_handler_noexcept
+     2         1 @Base/intfuncs.jl       921 dec(x::UInt64, pad::Int64, neg::B…
+     2         2 @juliasrc/genericmemory.c  106 jl_string_to_genericmemory
+     2         2 @juliasrc/gc-stock.c    732 jl_gc_small_alloc_inner
+     2         0 @Base/strings/string.jl   71 String
+     2         2 @Base/strings/substring.jl    ? SubString{String}(s::String, i::I…
+     2         1 @Base/strings/search.jl   95 _search
+     2         1 @Base/strings/search.jl   93 _search
+     2         0 @Base/strings/util.jl   734 iterate
+     2         0 @Base/strings/string.jl  194 nextind
+     2         2 @Base/io.jl            1236 iterate(itr::Base.EachLine{IOStre…
+     2         0 @Base/lock.jl           195 lock
+     2         0 @Base/lock.jl           171 trylock
+     2         0 @juliasrc/array.c       309 ijl_pchar_to_string
+     2         0 @juliasrc/sys.c         291 ijl_readuntil
+     2         0 @juliasrc/support/ios.c  850 ios_copyuntil
+     2         0 @juliasrc/support/ios.c  368 ios_readprep
+     2         0 @juliasrc/support/ios.c  106 _os_read
+     2         0 /lib64/libc.so.6          ? read
+     3         0 @Base/strings/io.jl     146 print_to_string(::String, ::Int64)
+     3         0 @Base/strings/io.jl     134 _str_sizehint
+     3         0 @Dates/src/io.jl        184 format
+     3         0 @Base/iobuffer.jl       823 unsafe_write(to::IOBuffer, p::Ptr…
+     3         0 @Base/array.jl         1126 _growend!
+     3         3 @OracleD/src/DataLogger.jl   97 job_finish!(datalogger::Main.Orac…
+     3         0 @OracleD/src/WorkerNode.jl  221 start_job!(worker_node::Main.Orac…
+     3         0 @OracleD/src/Jobs.jl     60 set_duration!
+     3         0 @OracleD/src/Jobs.jl     49 _duration_period
+     3         0 @Base/rounding.jl       477 round
+     3         0 @Base/rounding.jl       479 round
+     3         0 @Base/rounding.jl       480 _round_convert
+     3         3 @Base/float.jl          920 Int64
+     3         3 @juliasrc/gc-stock.c    745 jl_gc_small_alloc_inner
+     3         3 @Base/array.jl         1131 (::Base.var"#_growend!##0#_growen…
+     3         3 @juliasrc/gc-stock.c    851 gc_sweep_page
+     3         3 @juliasrc/gc-stock.h    342 page_metadata
+     3         3 @juliasrc/gc-stock.c   2242 gc_mark_outrefs
+     3         3 /lib64/libc.so.6          ? __memcmp_evex_movbe
+     3         3 @juliasrc/gc-stock.c    291 gc_setmark_pool_
+     3         3 @Base/intfuncs.jl       916 dec(x::UInt64, pad::Int64, neg::B…
+     3         3 @Base/iobuffer.jl       822 unsafe_write(to::IOBuffer, p::Ptr…
+     3         3 @juliasrc/gc-stock.c    722 jl_gc_small_alloc_inner
+     3         3 @juliasrc/julia.h      1515 jl_is_layout_opaque
+     3         0 @Base/strings/io.jl     153 print_to_string(::String, ::Int64)
+     3         3 @juliasrc/gc-stock.c    779 ijl_gc_small_alloc
+     3         3 @Base/array.jl          737 _collect(cont::UnitRange{Int64}, …
+     3         1 @Base/strings/basic.jl  512 prevind
+     3         2 @Base/strings/basic.jl  514 prevind(s::String, i::Int64, n::I…
+     3         0 @Base/iostream.jl        43 eof(s::IOStream)
+     3         2 @Base/iostream.jl       252 _eof_nolock
+     3         0 @juliasrc/sys.c         277 ijl_readuntil
+     4         0 @Base/coreio.jl           5 println
+     4         0 @Base/strings/io.jl      46 print(::Base.TTY, ::String, ::Str…
+     4         0 @Base/intfuncs.jl       712 ndigits0zpb(x::Int64, b::Int64)
+     4         0 @Base/intfuncs.jl       666 bit_ndigits0z
+     4         0 @Base/intfuncs.jl       917 dec(x::UInt64, pad::Int64, neg::B…
+     4         1 @Base/intfuncs.jl       770 ndigits0z
+     4         4 @Base/essentials.jl     919 getindex
+     4         0 @OracleD/src/WorkerNode.jl  351 update!(worker_node::Main.OracleD…
+     4         0 @Base/number.jl           7 convert
+     4         0 @OracleD/src/Cluster.jl  181 update!(cluster::Main.OracleD.Clu…
+     4         4 @juliasrc/gc-stock.c   1263 gc_sweep_pool_parallel
+     4         0 @Dates/src/io.jl        679 format(dt::DateTime, fmt::DateFor…
+     4         4 @Base/intfuncs.jl       992 string(n::Int64; base::Int64, pad…
+     4         0 @OracleD/src/WorkerNode.jl  344 update!(worker_node::Main.OracleD…
+     4         0 @juliasrc/gc-stock.c    636 jl_gc_free_memory
+     4         0 @OracleD/src/Cluster.jl  182 update!(cluster::Main.OracleD.Clu…
+     4         0 @juliasrc/gc-stock.c   2448 gc_mark_outrefs
+     4         0 @juliasrc/gc-stock.c    316 gc_setmark
+     4         4 @juliasrc/gc-stock.c   2244 gc_mark_outrefs
+     4         0 @juliasrc/datatype.c   1811 ijl_get_nth_field
+     4         1 @juliasrc/julia.h      1523 jl_datatype_layout
+     4         0 @Base/strings/util.jl   732 iterate
+     4         0 @Base/strings/search.jl   55 findnext(pred::Base.Fix2{typeof(i…
+     4         0 @Base/io.jl            1237 iterate(itr::Base.EachLine{IOStre…
+     5         0 @OracleD/src/Cluster.jl  201 update!(cluster::Main.OracleD.Clu…
+     5         0 @juliasrc/gc-stock.c    954 gc_sweep_page
+     5         5 @juliasrc/gc-stock.h    161 push_lf_back
+     5         3 @juliasrc/gc-stock.c   1685 gc_try_claim_and_push
+     5         0 @juliasrc/gc-stock.c   2514 gc_mark_loop_serial_
+     5         0 @juliasrc/gc-stock.c   1616 gc_ptr_queue_pop
+     5         5 @juliasrc/work-stealing-queue.h   79 ws_queue_pop
+     5         1 @Base/strings/io.jl      34 print(io::IOBuffer, x::Int64)
+     5         5 @juliasrc/gc-stock.c    790 jl_gc_alloc_
+     5         0 @juliasrc/gc-stock.c   2352 gc_mark_outrefs
+     5         0 @juliasrc/gc-stock.c    316 gc_setmark
+     5         0 @Base/operators.jl      321 !=
+     5         0 @Base/strings/string.jl  163 ==
+     5         4 @juliasrc/datatype.c   1814 ijl_get_nth_field
+     5         0 @Base/strings/substring.jl   49 SubString
+     6         0 @Base/stream.jl        1154 unsafe_write(s::Base.TTY, p::Ptr{…
+     6         0 @Base/stream.jl        1069 uv_write(s::Base.TTY, p::Ptr{UInt…
+     6         0 @Base/stream.jl        1114 uv_write_async(s::Base.TTY, p::Pt…
+     6         0 @juliasrc/jl_uv.c       683 jl_uv_write
+     6         0 …buv/src/unix/stream.c 1405 uv_write
+     6         0 …buv/src/unix/stream.c 1380 uv_write2
+     6         0 …buv/src/unix/stream.c  861 uv__write
+     6         0 …buv/src/unix/stream.c  812 uv__try_write
+     6         0 …buv/src/unix/stream.c  664 uv__writev
+     6         0 /lib64/libc.so.6          ? _int_free_merge_chunk
+     6         6 @juliasrc/gc-stock.c    973 gc_sweep_page
+     6         0 @OracleD/src/Jobs.jl     43 Job
+     6         0 @OracleD/src/Jobs.jl     30 Job
+     6         6 /lib64/libc.so.6          ? malloc_usable_size
+     6         0 @juliasrc/gc-stock.c    641 jl_gc_free_memory
+     6         0 /lib64/libc.so.6          ? _int_free_chunk
+     6         6 @juliasrc/julia_internal.h  536 jl_gc_szclass
+     6         1 @Base/intfuncs.jl       911 append_c_digits_fast(olength::Int…
+     6         0 /lib64/libc.so.6          ? __default_morecore
+     6         0 /lib64/libc.so.6          ? sbrk
+     6         6 /lib64/libc.so.6          ? brk
+     6         0 @Base/iostream.jl        43 readline(s::IOStream; keep::Bool)
+     7         0 /lib64/libc.so.6          ? __write
+     7         0 @Base/intfuncs.jl       809 ndigits
+     7         0 @Base/intfuncs.jl       809 #ndigits#402
+     7         7 @juliasrc/julia_internal.h  535 jl_gc_szclass
+     7         0 @OracleD/src/VOJobFactory.jl  195 create_job!
+     7         1 @Base/intfuncs.jl       919 dec(x::UInt64, pad::Int64, neg::B…
+     7         0 @Base/io.jl            1238 iterate(itr::Base.EachLine{IOStre…
+     7         0 @Base/iostream.jl       474 readline
+     8         6 @Base/iobuffer.jl       106 _new_generic_iobuffer
+     8         8 @juliasrc/gc-stock.c   1704 gc_mark_obj8
+     8         3 /lib64/libc.so.6          ? sysmalloc
+     8         0 @OracleD/src/Cluster.jl  126 submit_job!
+     8         0 @Base/strings/util.jl   737 iterate
+     8         4 @Base/strings/util.jl   731 iterate
+     9         7 /lib64/libc.so.6          ? _int_free_create_chunk
+     9         0 @juliasrc/gc-stock.c    953 gc_sweep_page
+     9         9 @juliasrc/gc-stock.c    830 gc_update_page_fragmentation_data
+     9         9 /lib64/libc.so.6          ? unlink_chunk.isra.0
+     9         0 @juliasrc/genericmemory.c  110 jl_string_to_genericmemory
+     9         0 @juliasrc/gc-stock.c    309 gc_setmark_pool
+     9         1 @Base/array.jl          739 _collect(cont::UnitRange{Int64}, …
+    10        10 /lib64/libc.so.6          ? __syscall_cancel_arch_end
+    10         0 @Dates/src/io.jl        211 format
+    10         0 @juliasrc/gc-stock.c    666 sweep_malloced_memory
+    11         0 @Base/strings/io.jl     248 print
+    11         0 /lib64/libc.so.6          ? __syscall_cancel
+    11         0 @Base/strings/string.jl  109 _string_n
+    11         0 @juliasrc/datatype.c   1842 ijl_get_nth_field
+    11         3 @juliasrc/datatype.c   1531 ijl_box_int64
+    11         0 @juliasrc/gc-stock.c   3184 _jl_gc_collect
+    11         0 @juliasrc/gc-stock.c    991 gc_sweep_other
+    11         0 @Base/intfuncs.jl       918 dec(x::UInt64, pad::Int64, neg::B…
+    12         0 @juliasrc/gc-stock.c   1168 gc_sweep_prescan
+    12        12 @juliasrc/gc-stock.h    152 pop_lf_back_nosync
+    12         0 @Base/strings/io.jl     152 print_to_string(::String, ::Int64)
+    12         0 @juliasrc/gc-stock.c   2463 gc_mark_outrefs
+    12         0 @Base/array.jl         1130 _growend!
+    13         0 @Dates/src/io.jl        673 macro expansion
+    13         0 @Dates/src/io.jl         81 format
+    13         1 @juliasrc/array.c       300 ijl_alloc_string
+    13         0 @juliasrc/gc-stock.c    794 jl_gc_alloc_
+    14         1 @Dates/src/io.jl        668 format(io::IOBuffer, dt::DateTime…
+    14         0 @juliasrc/gc-stock.c    776 ijl_gc_small_alloc
+    14         1 @Base/strings/string.jl  120 unsafe_wrap
+    14         0 @Base/array.jl          740 _collect(cont::UnitRange{Int64}, …
+    15         0 @Dates/src/io.jl        680 format(dt::DateTime, fmt::DateFor…
+    17         0 @Base/strings/io.jl     246 write
+    17         0 @OracleD/src/Utils.jl    67 pystr
+    18         0 @OracleD/src/Simulation.jl  157 _load_carbon_intensity_data(path:…
+    18         0 @Base/io.jl             705 readlines
+    18         0 @Base/io.jl             706 #readlines#360
+    18         0 @Base/io.jl             412 open(f::Base.var"#362#363"{Base.P…
+    18         0 @Base/io.jl             707 #362
+    18         0 @Base/io.jl             710 readlines
+    18         0 @Base/io.jl             710 #readlines#364
+    19         0 @OracleD/src/Time.jl    107 advance!(simulation_time::Main.Or…
+    20         0 @OracleD/src/Simulation.jl  366 start!(simulation::Main.OracleD.S…
+    20         0 @Base/strings/io.jl     149 print_to_string(::String, ::Int64)
+    20         0 @Base/iobuffer.jl       245 GenericIOBuffer
+    20         0 @Base/iobuffer.jl       266 #IOBuffer#390
+    20        20 @juliasrc/gc-stock.h    332 gc_page_data
+    20         0 @Base/strings/io.jl     147 print_to_string(::String, ::Int64)
+    21         0 @Base/io.jl             409 open
+    21         1 @Dates/src/io.jl        679 format
+    21         1 @juliasrc/gc-stock.c    739 jl_gc_small_alloc_inner
+    22         0 @juliasrc/gc-stock.c   1190 gc_sweep_prescan
+    22        22 @juliasrc/gc-stock.c   2240 gc_mark_outrefs
+    24         0 @juliasrc/datatype.c   1858 ijl_get_nth_field_checked
+    25         0 @Base/iobuffer.jl       167 StringMemory
+    25         0 @juliasrc/gc-stock.c   2273 gc_mark_outrefs
+    26        26 @Base/int.jl             87 +
+    28         4 @Base/array.jl          741 _collect(cont::UnitRange{Int64}, …
+    29         0 @Base/intfuncs.jl      1000 string(n::Int64; base::Int64, pad…
+    29        29 @juliasrc/gc-stock.c   1806 gc_mark_objarray
+    30        30 @juliasrc/julia_internal.h  352 memmove_refs
+    30        30 @juliasrc/gc-stock.c   1423 gc_sweep_pool
+    30         0 @Base/show.jl          1285 show
+    32         0 @OracleD/src/JobScheduler.jl  106 update!(scheduler::Main.OracleD.J…
+    33         0 @Base/strings/io.jl      35 print(io::IOBuffer, x::Int64)
+    34         0 @OracleD/src/Simulation.jl  327 start!(simulation::Main.OracleD.S…
+    34         2 @Base/tuple.jl           33 getindex
+    35         0 @juliasrc/gc-stock.c   1393 gc_sweep_pool
+    35         0 @juliasrc/gc-stock.c   1211 gc_sweep_wake_all_pages
+    35        35 @juliasrc/gc-stock.c    913 gc_sweep_page
+    35         1 @Base/tuple.jl           74 iterate
+    37         0 @Base/intfuncs.jl       990 string
+    37         0 @OracleD/src/Simulation.jl  158 _load_carbon_intensity_data(path:…
+    37         0 @Base/strings/util.jl   897 split
+    37         0 @Base/strings/util.jl   899 #split#428
+    40        40 @Base/array.jl         1128 _growend!
+    42         0 @OracleD/src/Cluster.jl  211 update!(cluster::Main.OracleD.Clu…
+    42        42 @Base/essentials.jl      11 length
+    45         0 @Base/strings/io.jl     151 print_to_string(::String, ::Int64)
+    47         0 @juliasrc/gc-stock.c   1275 gc_sweep_pool_parallel
+    54         0 @OracleD/src/WorkerNode.jl  355 update!(worker_node::Main.OracleD…
+    54         0 @juliasrc/gc-stock.c   1394 gc_sweep_pool
+    55         0 @Base/array.jl          728 collect
+    57         0 @OracleD/src/Simulation.jl   72 Main.OracleD.Simulation(config::O…
+    69         3 @juliasrc/gc-stock.c    983 gc_sweep_pool_page
+    70         0 @Base/array.jl         1293 _push!
+    70        70 @Base/array.jl         1010 __safe_setindex!
+    70         0 @Base/operators.jl      448 <=
+    70        70 @Base/bool.jl            41 |
+    71         1 @OracleD/src/WorkerNode.jl  346 update!(worker_node::Main.OracleD…
+    73        73 @juliasrc/julia_internal.h  353 memmove_refs
+    83        83 @juliasrc/gc-stock.c   1684 gc_try_claim_and_push
+    88         0 @juliasrc/gc-stock.c   1837 gc_mark_objarray
+    89         0 @OracleD/src/Simulation.jl  107 Main.OracleD.Simulation(config::O…
+    89         0 @OracleD/src/JobScheduler.jl   62 Main.OracleD.JobScheduler(simulat…
+    94         0 @juliasrc/gc-stock.c   2412 gc_mark_outrefs
+   103         0 @juliasrc/genericmemory.c  267 jl_genericmemory_copyto
+   105         0 @Base/strings/io.jl     193 string
+   106         0 @OracleD/src/VOJobFactory.jl  194 create_job!
+   106         0 @Base/array.jl         1152 (::Base.var"#_growend!##0#_growen…
+   106         0 @Base/genericmemory.jl  129 unsafe_copyto!
+   117       102 /lib64/libc.so.6          ? _int_malloc
+   122         1 /lib64/libc.so.6          ? _int_memalign
+   124         2 /lib64/libc.so.6          ? _mid_memalign
+   126         0 @juliasrc/gc-stock.c   3834 ijl_gc_managed_malloc
+   126         0 @juliasrc/gc-common.h   112 jl_malloc_aligned
+   126         2 /lib64/libc.so.6          ? posix_memalign
+   126         0 @juliasrc/gc-stock.c   3187 _jl_gc_collect
+   132         0 @juliasrc/genericmemory.c   38 jl_alloc_genericmemory_unchecked
+   134         0 @OracleD/src/Cluster.jl  199 update!(cluster::Main.OracleD.Clu…
+   138         0 @OracleD/src/Cluster.jl  189 update!(cluster::Main.OracleD.Clu…
+   150         0 @OracleD/diagnostics.jl  159 build_mini_simulation
+   151         0 @OracleD/diagnostics.jl  328 profiled_run
+   176         0 @juliasrc/gc-stock.c   2519 gc_mark_loop_serial_
+   182         0 @juliasrc/gc-stock.c   3074 _jl_gc_collect
+   182         0 @juliasrc/gc-stock.c   2730 gc_mark_loop
+   182         0 @juliasrc/gc-stock.c   2542 gc_mark_loop_serial
+   196         0 @OracleD/src/WorkerNode.jl  182 get_memory_available
+   196       196 @Base/float.jl          496 -
+   244       244 @Base/float.jl          623 <
+   320         0 @juliasrc/gc-stock.c   3475 ijl_gc_collect
+   322         0 @juliasrc/gc-stock.c    351 maybe_collect
+   324         0 @juliasrc/gc-stock.c    727 jl_gc_small_alloc_inner
+   335         0 @juliasrc/genericmemory.c   41 jl_alloc_genericmemory_unchecked
+   343         0 @juliasrc/gc-stock.c    799 jl_gc_alloc_
+   343         0 @juliasrc/gc-stock.c    785 jl_gc_small_alloc_noinline
+   379       379 /lib64/libc.so.6          ? __memset_avx512_unaligned_erms
+   572       572 @Base/Base_compiler.jl   54 getproperty
+   727       727 @Base/essentials.jl     920 getindex
+   846         0 @Base/array.jl         1148 (::Base.var"#_growend!##0#_growen…
+   846         0 @Base/array.jl         1067 array_new_memory
+   848         0 @Base/boot.jl           588 GenericMemory
+   881       881 @Base/int.jl            519 <
+   959         1 @Base/array.jl         1131 _growend!
+  1005         0 @OracleD/src/WorkerNode.jl  193 can_schedule_job
+  1010         0 @OracleD/src/Cluster.jl  209 update!(cluster::Main.OracleD.Clu…
+  1017         0 @Base/array.jl         1292 _push!
+  1087         0 @Base/array.jl         1289 push!
+  1630         0 @OracleD/src/Cluster.jl  205 update!(cluster::Main.OracleD.Clu…
+  1671         0 @OracleD/src/WorkerNode.jl  175 get_free_core_count
+  1675      1675 @Base/int.jl             86 -
+  1813       142 @Base/array.jl          901 iterate
+  2281      2281 @Base/essentials.jl       ? update!(cluster::Main.OracleD.Clu…
+  4578      4578 @Base/int.jl             83 <
+  4810         0 @Base/operators.jl      425 >
+  6289        52 @OracleD/src/WorkerNode.jl  192 can_schedule_job
+  7500       206 @OracleD/src/Cluster.jl  200 update!(cluster::Main.OracleD.Clu…
+ 12754         0 @OracleD/src/Simulation.jl  330 start!(simulation::Main.OracleD.S…
+ 12811         0 @OracleD/diagnostics.jl  329 profiled_run
+ 12811         0 @OracleD/diagnostics.jl  172 run_mini_simulation
+ 12962         0 @juliasrc/task.c       1252 start_task
+ 12962         0 @julialib/julia/sys.so    ? jfptr_YY.start_profile_listenerYY…
+ 12962         0 @Base/Base.jl           352 (::Base.var"#start_profile_listen…
+ 12962         0 @Base/Base.jl           332 profile_printing_listener(cond::B…
+ 12962         0 @Base/asyncevent.jl     185 _trywait(t::Base.AsyncCondition)
+ 12962         0 @Base/condition.jl      136 wait
+ 12962         0 @Base/condition.jl      141 wait(c::Base.GenericCondition{Bas…
+ 12962         0 @Base/task.jl          1228 wait()
+ 12962         0 @Base/task.jl          1216 poptask(W::Base.IntrusiveLinkedLi…
+ 12962         0 @juliasrc/scheduler.c   523 ijl_task_get_next
+ 12962         0 …buv/src/unix/thread.c  822 uv_cond_wait
+ 12962         0 /lib64/libc.so.6          ? pthread_cond_wait
+ 12962         0 /lib64/libc.so.6          ? __GI___futex_abstimed_wait_cancel…
+ 12962         0 …ysdeps/x86_64/start.S  123 [unknown function]
+ 12962         0 /lib64/libc.so.6          ? __libc_start_main
+ 12962         0 /lib64/libc.so.6          ? __libc_start_call_main
+ 12962         0 …t-12/cli/loader_exe.c   58 main
+ 12962         0 @juliasrc/jlapi.c      1139 jl_repl_entrypoint
+ 12962         0 @juliasrc/jlapi.c       971 true_main
+ 12962         0 @julialib/julia/sys.so    ? jfptr__start_63319.1
+ 12962         0 @Base/client.jl         550 _start()
+ 12962         0 @Base/client.jl         317 exec_options(opts::Base.JLOptions)
+ 12962         0 @Base/Base.jl           306 include(mod::Module, _path::Strin…
+ 12962         0 @Base/loading.jl       2934 _include(mapexpr::Function, mod::…
+ 12962         0 @Base/loading.jl       2874 include_string(mapexpr::typeof(id…
+ 12962         0 @Base/boot.jl           489 eval(m::Module, e::Any)
+ 12962         0 @juliasrc/toplevel.c   1092 ijl_toplevel_eval_in
+ 12962         0 @juliasrc/toplevel.c   1047 ijl_toplevel_eval
+ 12962         0 @juliasrc/toplevel.c    975 jl_toplevel_eval_flex
+ 12962         0 @juliasrc/toplevel.c   1035 jl_toplevel_eval_flex
+ 12962         0 @juliasrc/interpreter.c  898 jl_interpret_toplevel_thunk
+ 12962         0 @juliasrc/interpreter.c  707 eval_body
+ 12962         0 @juliasrc/interpreter.c  194 eval_stmt_value
+ 12962         0 @juliasrc/interpreter.c  243 eval_value
+ 12962         0 @juliasrc/interpreter.c  123 do_call
+ 12962         0 [any unknown stackframes]
+ 12962         0 @OracleD/diagnostics.jl  508 main()
+ 12962         0 @OracleD/diagnostics.jl  338 phase2_profiling()
+ 12962         0 @Profile/src/Profile.jl   60 macro expansion
+ 12963     12963 /lib64/libc.so.6          ? __syscall_cancel_arch_start
+ 12973         0 /lib64/libc.so.6          ? __internal_syscall_cancel
+ 25924         0 @juliasrc/julia.h      2391 jl_apply
+Total snapshots: 25924. Utilization: 50% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.
