@@ -34,7 +34,7 @@ makedocs(
 # julia-actions/julia-docdeploy workflow). Only runs on CI.
 if get(ENV, "CI", "false") == "true"
     deploydocs(
-        repo = "github.com/<username>/<Repository>.git", # TODO: set the repository
+        repo = "github.com/AtulChikku/OracleD.jl.git", # TODO: set the repository
         devbranch = "main",
         push_preview = true,
     )
