@@ -11,7 +11,6 @@ OracleD.jl/
 ├── Project.toml                     # Julia project metadata (+ docs workspace)
 ├── Manifest.toml                    # Resolved dependencies
 ├── README.md                        # Quick-start README
-├── Diagnostics.jl               # Whole-port performance diagnostics (see Diagnostics)
 ├── test/
 │   └── runtests.jl                  # Unit tests (see Running the tests)
 ├── docs/

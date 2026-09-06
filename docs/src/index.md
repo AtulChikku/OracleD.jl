@@ -24,8 +24,7 @@ preserves are catalogued in [`doc/migration-notes.md`](development.md).
 ## Table of contents
 
 ```@contents
-Pages = ["index.md", "configuration.md", "custom-cluster.md",
-         "diagnostics.md", "development.md", "api.md", "about.md"]
+Pages = ["index.md", "configuration.md", "custom-cluster.md", "development.md", "api.md", "about.md"]
 Depth = 2
 ```
 
